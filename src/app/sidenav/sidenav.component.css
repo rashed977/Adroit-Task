@@ -1,0 +1,10 @@
+.logo, .logo>svg{
+  width: 45px;
+  height: 45px;
+}
+button>img{
+  width: 35px;
+}
+.offcanvas{
+  width: 250px;
+}

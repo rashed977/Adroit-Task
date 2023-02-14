@@ -1,0 +1,93 @@
+<div
+  class="inputs-container mb-3 d-flex flex-column justify-content-around shadow-sm p-3 mb-5 bg-body rounded"
+>
+  <div class="cards-body d-flex align-self-center justify-content-center">
+    <input
+      type="search"
+      class="form-control"
+      [(ngModel)]="year"
+      list="yearOptions"
+      id="exampleDataList"
+      placeholder="Select Year"
+    />
+    <datalist id="yearOptions" class="autocomplete">
+      <option value="2019" class="autocomplete-option"></option>
+      <option value="2020" class="autocomplete-option"></option>
+      <option value="2021" class="autocomplete-option"></option>
+      <option value="2022" class="autocomplete-option"></option>
+    </datalist>
+
+    <input
+      type="search"
+      class="form-control"
+      [(ngModel)]="period"
+      list="periodOptions"
+      id="exampleDataList"
+      placeholder="Select Period"
+    />
+    <datalist id="periodOptions" class="data-list">
+      <option value="October">
+        <p>10/01/2021 - 10/31/2021</p>
+      </option>
+      <option value="September">
+        <p>10/01/2021 - 10/31/2021</p>
+      </option>
+      <option value="August">
+        <p>10/01/2021 - 10/31/2021</p>
+      </option>
+      <option value="July">
+        <p>10/01/2021 - 10/31/2021</p>
+      </option>
+    </datalist>
+
+    <input
+      type="search"
+      class="form-control"
+      [(ngModel)]="state"
+      list="stateOptions"
+      id="exampleDataList"
+      placeholder="Select State"
+    />
+    <datalist id="stateOptions">
+      <option value="AZ"></option>
+      <option value="CA"></option>
+    </datalist>
+
+    <input
+      type="search"
+      class="form-control"
+      [(ngModel)]="contractor"
+      list="contractorOptions"
+      id="exampleDataList"
+      placeholder="Select Contractor"
+    />
+    <datalist id="contractorOptions">
+      <option value="Paying Client"></option>
+      <option value="Achieve Kids"></option>
+      <option value="Alexander Valley Union School"></option>
+      <option value="Basis Scottsdale Primary East"></option>
+      <option value="Belmont-Redwood Shores School"></option>
+      <option value="Brisbanen School District"></option>
+      <option value="Camberian School District"></option>
+      <option value="Campbell Union High School District"></option>
+      <option value="Campbell Union School District"></option>
+    </datalist>
+  </div>
+
+  <!-- *************************************************** -->
+  <div class="buttons align-self-end">
+    <button
+      (click)="onClear()"
+      type="button"
+      class="btn btn-outline-secondary btn-sm waves-effect me-2 mt-2"
+    >
+      <img src="../../assets/icons/clearBtn.svg" alt="" /> Clear
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-info btn-sm waves-effect me-2 mt-2"
+    >
+      <img src="../../assets/icons/applyBtn.svg" alt="" /> Apply
+    </button>
+  </div>
+</div>

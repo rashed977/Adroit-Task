@@ -1,0 +1,50 @@
+.main-cards-cont{
+  width: 85%;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+}
+
+h4{
+  font-weight: 300;
+  font-size:  .840rem;
+  text-transform: uppercase;
+}
+h3{
+  color: #52657c !important;
+  font-weight: 700;
+  font-size: .990rem;
+}
+span{
+  color: #52657c !important;
+  font-weight: 700;
+  font-size: .675rem;
+}
+hr{
+  height: 5px;
+  border-radius: 7px;
+  opacity: unset    ;
+}
+.hr-blue{
+  background-color: #8bbbf8;
+  border-color: #8bbbf8;
+  /* border-color: #8bbbf8; */
+
+}
+.hr-yellow{
+  background-color: #f8e08b;
+  border-color: #f8e08b;
+}
+.hr-green{
+  background-color: #7fdc94;
+  border-color: #7fdc94;
+}
+.hr-grey{
+  background-color: #d6d6d6;
+  border-color: #d6d6d6;
+}
+.hr-red{
+  background-color: #fa8c83;
+  border-color: #fa8c83;
+}

@@ -1,0 +1,149 @@
+<header>
+  <app-sidenav class="d-xl-none"></app-sidenav>
+
+  <div class="left-container d-xl-flex d-md-none d-sm-none d-none d-sm-block">
+    <div class="logo me-10">
+      <img src="../../assets/icons/logo.svg" alt="logo" />
+    </div>
+    <div class="nav-items-left">
+      <ul class="nav nav-tabs">
+        <li class="nav-item dropdown anchor">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            ><img src="../../assets/icons/home.svg" alt="" />Dashboard</a
+          >
+          <ul class="dropdown-menu shadow bg-body rounded">
+            <li><a class="dropdown-item" href="#">Fanancial</a></li>
+            <li><a class="dropdown-item" href="#">Performance</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown anchor">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            ><img src="../../assets/icons/financial.svg" alt="" /> Fanancial</a
+          >
+          <ul class="dropdown-menu shadow bg-body rounded">
+            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown anchor">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            ><img src="../../assets/icons/performance.svg" alt="" />
+            Performance</a
+          >
+          <ul class="dropdown-menu shadow bg-body rounded">
+            <li><a class="dropdown-item" href="#">Arrival time report</a></li>
+            <li><a class="dropdown-item" href="#">incident report</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown anchor">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+          >
+            <img src="../../assets/icons/quality.svg" alt="" />
+            Quality</a
+          >
+          <ul class="dropdown-menu shadow bg-body rounded">
+            <li><a class="dropdown-item" href="#">Ride Quality Report</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- ************************************************ -->
+  <div class="right-container">
+    <div class="notif-icons d-flex justify-content-between pt-3 pe-1">
+      <button class="bg-transparent border-0">
+        <img src="../../assets/icons/clock.svg" alt="clock" />
+        <span class="top-0 start-100 translate-middle badge bg-primary">
+          5
+        </span>
+      </button>
+
+      <button class="bg-transparent border-0">
+        <img src="../../assets/icons/chat.svg" alt="" />
+        <span class="top-0 start-100 translate-middle badge bg-primary">
+          5
+        </span>
+      </button>
+
+      <button class="bg-transparent border-0">
+        <img src="../../assets/icons/bell.svg" alt="" />
+
+        <span class="top-0 start-100 translate-middle badge bg-primary">
+          6
+        </span>
+      </button>
+    </div>
+
+    <div class="user-nav d-flex pe-2">
+      <div class="user-info">
+        <span class="user-name text-white">John Doe</span>
+        <span class="user-status text-white">Sample</span>
+      </div>
+      <div class="profile">
+        <img
+          src="../../assets/icons/profile.png"
+          alt="avatar"
+          height="40"
+          width="40"
+          class="rounded-circle ms-2"
+        /><span
+          class="position-absolute p-1 bg-success border border-light rounded-circle active-icon"
+        >
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+<body>
+  <main class="main-content">
+    <div class="navigation-content">
+      <div class="card-body pt-4 d-flex justify-content-between">
+        <h4>Fanancial Overview</h4>
+        <div class="dropdown">
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="../../assets/icons/overview.svg" class="burger" alt="" />
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="card-body" style="height: 10px">
+        <p>Financial > OAI Report</p>
+      </div>
+      <hr />
+    </div>
+    <app-cards></app-cards>
+    <app-table></app-table>
+  </main>
+</body>

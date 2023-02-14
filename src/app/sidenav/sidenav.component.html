@@ -1,0 +1,91 @@
+<button
+  class="btn"
+  type="button"
+  data-bs-toggle="offcanvas"
+  data-bs-target="#offcanvasScrolling"
+  aria-controls="offcanvasScrolling"
+>
+  <img src="../../assets/icons/hamburger-menu.svg" alt="burger-menu" />
+  <div
+    class="offcanvas offcanvas-start"
+    data-bs-scroll="true"
+    data-bs-backdrop="false"
+    tabindex="-1"
+    id="offcanvasScrolling"
+    aria-labelledby="offcanvasScrollingLabel"
+  >
+    <div class="offcanvas-header d-flex justify-content-between">
+      <div class="logo">
+        <img src="../../assets/icons/logo.svg" alt="" />
+      </div>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <a
+        class="btn collapsed"
+        data-bs-toggle="collapse"
+        href="#collapseDashboard"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        <img src="../../assets/icons/home.svg" alt="" /> Dashboard
+      </a>
+      <ul class="collapse" id="collapseDashboard">
+        <li><a class="dropdown-item" href="#">Financial</a></li>
+        <li><a class="dropdown-item" href="#">Performance</a></li>
+      </ul>
+      <a
+        class="btn collapsed"
+        data-bs-toggle="collapse"
+        href="#collapseFinancial"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        <img src="../../assets/icons/financial.svg" alt="" /> Financial
+      </a>
+      <ul class="collapse" id="collapseFinancial">
+        <li><a class="dropdown-item" href="#">Annual Revenue Report</a></li>
+        <li><a class="dropdown-item" href="#">Client Invoices Report</a></li>
+        <li><a class="dropdown-item" href="#">Payout Activity Report</a></li>
+        <li><a class="dropdown-item" href="#">Contractors Annual Report</a></li>
+        <li><a class="dropdown-item" href="#">OAI Report</a></li>
+      </ul>
+
+      <a
+        class="btn collapsed"
+        data-bs-toggle="collapse"
+        href="#collapsePerformance"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        <img src="../../assets/icons/performance.svg" alt="" /> Performance
+      </a>
+      <ul class="collapse" id="collapsePerformance">
+        <li><a class="dropdown-item" href="#">Arrival Time Report</a></li>
+        <li><a class="dropdown-item" href="#">Incident Report</a></li>
+      </ul>
+
+      <a
+        class="btn collapsed"
+        data-bs-toggle="collapse"
+        href="#collapseQuality"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        <img src="../../assets/icons/quality.svg" alt="" /> Quality
+      </a>
+      <ul class="collapse" id="collapseQuality">
+        <li><a class="dropdown-item" href="#">Ride Quality Report</a></li>
+      </ul>
+    </div>
+  </div>
+</button>

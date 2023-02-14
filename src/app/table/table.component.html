@@ -1,0 +1,72 @@
+<div class="card-body shadow p-3 mb-5 bg-body rounded">
+  <div class="col-lg-12 text-end Load-More-section mt-1">
+    <button
+      type="button"
+      class="btn btn-primary view-hide-btn mb-4"
+      (click)="onToggle()"
+    >
+      <p>{{ viewButton ? "Hide" : "View" }} Filters</p>
+    </button>
+  </div>
+
+  <app-filters *ngIf="viewButton"></app-filters>
+
+  <div class="row mb-3">
+    <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center">
+        <label class="d-flex align-items-center"
+          >Show
+          <select
+            class="form-control mx-25 form-control-sm ng-valid ng-dirty ng-touched"
+          >
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+          entries
+        </label>
+      </div>
+      <div class="d-flex justify-content-md-end">
+        <label for="search" class="d-flex align-items-center">Search</label>
+        <input
+          type="search"
+          placeholder="search"
+          class="form-control form-control-sm ml-25"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="table-container">
+    <table class="table table-hover">
+      <thead class="table-light">
+        <tr class="tr-header">
+          <th class="th-id" scope="col">ID</th>
+          <th class="th-cont" scope="col">CONTRACTOR</th>
+          <th scope="col">NUMBER OF RIDES</th>
+          <th scope="col">TOTAL PERIOD 3 MILES</th>
+          <th scope="col">INSURANCE COST</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of tableData">
+          <td scope="row">{{ item.id }}</td>
+          <td>{{ item.contrator }}</td>
+          <td>{{ item.noOfRides }}</td>
+          <td>{{ item.totPeriod }}</td>
+          <td>${{ item.cost }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="col-lg-12 text-center Load-More-section load-more-btn mt-4">
+      <button
+        type="button"
+        class="btn btn-light btn-Load-More btn-sm load-btn me-2"
+        disabled
+      >
+        load more
+      </button>
+      {{ dataLength }} total records
+    </div>
+  </div>
+</div>
